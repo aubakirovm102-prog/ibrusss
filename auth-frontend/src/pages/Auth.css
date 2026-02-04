@@ -1,0 +1,111 @@
+/* ===== RESET ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== AUTH CARD ===== */
+.auth-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 35px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    transition: transform 0.3s;
+}
+
+.auth-wrapper:hover {
+    transform: translateY(-3px);
+}
+
+/* ===== TITLE ===== */
+.auth-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* ===== INPUTS ===== */
+.auth-input {
+    width: 100%;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.auth-input::placeholder {
+    color: #aaa;
+}
+
+.auth-input:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+    transform: scale(1.02);
+}
+
+/* ===== BUTTON ===== */
+.auth-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 14px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #6c63ff, #5848c2);
+    box-shadow: 0 5px 15px rgba(108, 99, 255, 0.4);
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.auth-button:hover {
+    background: linear-gradient(135deg, #5848c2, #6c63ff);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(108, 99, 255, 0.5);
+}
+
+/* ===== MESSAGE ===== */
+.auth-message {
+    margin-top: 12px;
+    text-align: center;
+    color: #6c63ff;
+    font-size: 14px;
+}
+
+/* ===== LINK ===== */
+.auth-link {
+    margin-top: 12px;
+    text-align: center;
+    color: #6c63ff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.auth-link:hover {
+    color: #5848c2;
+    text-decoration: underline;
+}
